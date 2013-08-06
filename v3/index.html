@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>test</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Tim Steele" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" type="text/css" />
+		<!--[if lt IE 9]>
+			<script src="script/html5shiv.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="script/global.js"></script>
+		<script type="text/javascript" src="script/machina/machina-1.0.js"></script>
+
+	</head>
+
+	<body>
+		<div>This is a test page for sandbox development.</div>
+		<div></div>
+		<div>
+			<form id="testform">
+				<input type="text" id='testinput' />
+			</form>
+		</div>
+		<div id="test">	
+			<ul>
+				<li><a href="ht.html" m:gizmo="moodle" id="anchor" m:gizmo:options='"moodle": {"height": "600", "width":"400", "data":{"action":"get_template_ajax","template":"page-login"}}'>Test 1 (Error)</a></li>
+				<li><a href="ajax.json" m:gizmo="moodle, openID" m:gizmo:options='"moodle": {"key": "value"}, "openID": {"services":["facebook","yahoo","google","twitter"]}'>Test 1 (Gizmo and Gadget)</a></li>
+				<li><a href="html.html" m:gizmo="moodle" m:gizmo:options='"moodle": {"height": "600", "width":"400", "type":"GET", "data":{"action":"get_template_ajax","template":"page-login"}}'>GET SOME</a></li>
+				<li><div m:gizmo="moodle" id="anchor" m:gizmo:options='"moodle": {"height": "600", "width":"400", "data":{"action":"get_template_ajax","template":"page-login"}}'>Test 1 (Gizmo and Gadget)</div></li>
+				<li><div m:gizmo="openID" id="ta" m:gizmo:options='"openID": {"services":["facebook","yahoo","google","twitter"]}'>OpenID </div></li>
+			</ul>
+
+		</div>	
+	</body>
+</html>

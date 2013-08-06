@@ -1,0 +1,123 @@
+/* line 5, sass/_moodle.scss */
+#moodle_overlay {
+  height: 100%;
+  position: fixed;
+  /* Offsets */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000001;
+}
+
+/* line 17, sass/_moodle.scss */
+.android #moodle_overlay {
+  position: absolute;
+}
+
+/* line 23, sass/_moodle.scss */
+#moodle_window {
+  position: absolute;
+  z-index: 1000002;
+}
+
+/* line 28, sass/_moodle.scss */
+#moodle_container {
+  *zoom: 1;
+}
+/* line 30, sass/_moodle.scss */
+#moodle_container > header {
+  position: relative;
+}
+
+/* line 35, sass/_moodle.scss */
+#moodle_container:before, #moodle_container:after {
+  content: "";
+  display: table;
+}
+
+/* line 40, sass/_moodle.scss */
+#moodle_container:after {
+  clear: both;
+}
+
+/* line 44, sass/_moodle.scss */
+.close-button {
+  position: absolute;
+  /* Offsets */
+  top: 20px;
+  right: 20px;
+  font-family: Verdana, sans-serif;
+}
+
+/* line 56, sass/_moodle.scss */
+#moodle_overlay {
+  background: rgba(0, 0, 0, 0.5) url("../images/gizmos/moodle/background_loading_white-transparent.gif") no-repeat center center;
+  background-image: url(../images/gizmos/moodle/background_overlay_no-rgba.png) \9;
+  background-repeat: repeat\9;
+}
+
+/* line 66, sass/_moodle.scss */
+#moodle_window {
+  background: rgba(143, 199, 252, 0.3);
+  padding: 0.75em;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 70, sass/_moodle.scss */
+#moodle_window .loading {
+  height: 100%;
+  min-height: em-adjust(3em);
+  min-width: em-adjust(3em);
+  text-align: center;
+  width: 100%;
+}
+
+/* line 79, sass/_moodle.scss */
+.sears #moodle_window {
+  background: rgba(143, 199, 252, 0.3);
+}
+
+/* line 83, sass/_moodle.scss */
+.kmart #moodle_window {
+  background: rgba(253, 190, 81, 0.3);
+}
+
+/* line 103, sass/_moodle.scss */
+#moodle_container {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 110, sass/_moodle.scss */
+#moodle_container .close-button {
+  background: transparent url("../images/gizmos/moodle/modal_close-button.png") no-repeat 0px 0px;
+  height: 8px;
+  width: 35px;
+}
+
+/* line 116, sass/_moodle.scss */
+.moodle_transit {
+  left: -99999em;
+  opacity: 0;
+  position: absolute;
+  top: -99999em;
+  visibility: hidden;
+  max-width: 940px;
+}
+
+/* line 125, sass/_moodle.scss */
+#moodle_error {
+  width: 400px;
+  padding: 20px;
+}
